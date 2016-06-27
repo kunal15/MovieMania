@@ -22,7 +22,7 @@ public class MovieDescription extends AppCompatActivity {
 
         description.setText(i.getStringExtra("Info"));
         votes.setText("Votes : " + Integer.toString(i.getIntExtra("Votes", 0)));
-        popularity.setText("Popularity : " +  Integer.toString(i.getIntExtra("Popularity", 100)));
+        popularity.setText("Popularity : " +  Double.toString(i.getDoubleExtra("Popularity", 100.00)));
         releaseDate.setText("Release Date : " + i.getStringExtra("Release"));
         Picasso.with(this).load(i.getStringExtra("Image")).into(image1);
         Picasso.with(this).load(i.getStringExtra("Image2")).into(image2);
